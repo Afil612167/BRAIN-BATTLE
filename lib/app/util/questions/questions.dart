@@ -1,286 +1,666 @@
+
+
 Map easyQuestions = {
-  "questions": [
-    {
-      "_id": "633f44196c9ef451f3102f17",
-      "text":
-          "Which world famous star is a member of the band `30 odd foot of grunts`?",
-      "options": [
-        {"option": "Bob Dylan", "isCorrect": false},
-        {"option": "Marvin Gaye", "isCorrect": false},
-        {"option": "Elton John", "isCorrect": false},
-        {"option": "Russel Crowe", "isCorrect": true}
+  "questions": 
+    [
+      [
+        {
+          "question":
+              "In which year of First World War Germany declared war on Russia and France?",
+          "options": ["1914", "1913", "1916", "1919"],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "ICAO stands for",
+          "options": [
+            "International Civil Aviation Organization",
+            "Indian Corporation of Agriculture Organization",
+            "Institute of Company of Accounts Organization",
+            "None of the above"
+          ],
+          "correctAnswer": 1,
+        },
+        {
+          "question":
+              "India's first Technicolor film ____ in the early 1950s was produced by ____'Jhansi Ki Rani',Sohrab Modi",
+          "options": [
+            "Jhansi Ki Rani', Sohrab Modi",
+            "Jhansi Ki Rani', Sir Syed Ahmed",
+            "'Mirza Ghalib', Sohrab Modi",
+            "'Mirza Ghalib', Munshi Premchand"
+          ],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "India has largest deposits of ____ in the world.",
+          "options": ["gold", "copper", "mica", "None of the above"],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "How many Lok Sabha seats belong to Rajasthan?",
+          "options": ["32", "25", "30", "17"],
+          "correctAnswer": 2,
+        },
+        {
+          "question": "India's first satellite is named after",
+          "options": [
+            "Aryabhatta",
+            "Bhaskara II",
+            "Bhaskara I",
+            "Albert Einstein"
+          ],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "India's first atomic reactor was",
+          "options": ["Zerlina", "Dhruva", "Apsara", "Kamini"],
+          "correctAnswer": 3,
+        },
+        {
+          "question":
+              "In which year, terrorists crash two planes into New York's World Trade Centre on September 11 in a sequence of destruction?",
+          "options": ["2000", "2001", "2004", "2003"],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "India's first ocean wave's energy project was launched in",
+          "options": ["1981", "1991", "2000", "1987"],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "In which of the following years, the membership of the Security Council was increased from 11 to 15 (under Article 23)?",
+          "options": ["1960", "1962", "1969", "1965"],
+          "correctAnswer": 4,
+        },
       ],
-      "category": {"_id": "63357ae03ab81af9ad154eb6", "name": "Music"},
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633f469c6c9ef451f3102f23",
-      "text":
-          "In which film would you find the character of Caledon `Cal` Hockley?",
-      "options": [
-        {"option": "Titanic", "isCorrect": true},
-        {"option": "Interstaller", "isCorrect": false},
-        {"option": "The Godfather", "isCorrect": false},
-        {"option": "There Will Be Blood", "isCorrect": false}
+      [
+        {
+          "question":
+              "India's tallest stone statue of the Jain sage Gomateswara is at",
+          "options": [
+            "Mysore, Karnakata",
+            "New Delhi",
+            "Sravanabelagola, Karnataka",
+            "Mandu, Madhya Pradesh"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question":
+              "In 1945, fifty nations met to phrase the basic charter for a world organization which would \"save succeeding generations from the scourge of war\". This conference took place at",
+          "options": ["Dumbarton Oaks", "London", "San Francisco", "Yalta"],
+          "correctAnswer": 3,
+        },
+        {
+          "question":
+              "In a normal human body, the total number of red blood cells is",
+          "options": [
+            "25 trillion",
+            "10 trillion",
+            "20 trillion",
+            "30 trillion"
+          ],
+          "correctAnswer": 4,
+        },
+        {
+          "question": "INS Venduruthy is located at",
+          "options": ["Kochi", "Lonavla", "Jamnagar", "Mumbai"],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "In which season do we need more fat?",
+          "options": ["Rainy season", "Spring", "Winter", "Summer"],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "How much districts are there in Punjab?",
+          "options": ["13", "14", "22", "25"],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "India participated in Olympics Hockey in",
+          "options": ["1918", "1928", "1938", "1948"],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "If force is expressed in Newton and the distance in metre, then the work done is expressed in",
+          "options": ["Joule", "Kg wt", "Kg wt m", "Watt"],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "How many teeth does a normal adult dog have?",
+          "options": ["32", "36", "28", "42"],
+          "correctAnswer": 4,
+        },
+        {
+          "question":
+              "How many red blood cells does the bone marrow produce every second?",
+          "options": ["2 million", "5 million", "8 million", "7 million"],
+          "correctAnswer": 1,
+        },
       ],
-      "category": {
-        "_id": "63357af83ab81af9ad154eb8",
-        "name": "TV Series and Films"
-      },
-      "difficulty": {"_id": "63343ba898b44503fecc49e9", "degree": "Easy"}
-    },
-    {
-      "_id": "633f4e446c9ef451f3102f49",
-      "text": "What is the capital of Liechtenstein?",
-      "options": [
-        {"option": "Triesenberg", "isCorrect": false},
-        {"option": "Balzers ", "isCorrect": false},
-        {"option": "Vaduz", "isCorrect": true},
-        {"option": "Schaan", "isCorrect": false}
+      [
+        {
+          "question":
+              "How many times has Brazil won the World Cup Football Championship?",
+          "options": ["Four times", "Twice", "Five times", "Once"],
+          "correctAnswer": 3,
+        },
+        {
+          "question":
+              "If speed of rotation of the earth increases, weight of the body",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question":
+              "If speed of rotation of the earth increases, weight of the body",
+          "options": [
+            "increases",
+            "remains unchanged",
+            "decreases",
+            "may decrease or increase"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question":
+              "In August, 1996 at Kolar(near Bangalore), India made successful test flights of Unmanned Air Vehicle (UAV) named",
+          "options": ["Arjun", "Nishant", "Vijayanta", "Lakshya"],
+          "correctAnswer": 2,
+        },
+        {
+          "question": "IDA Stands for",
+          "options": [
+            "Indian Development Agency",
+            "International Development Agency",
+            "Industrial Development Analyses",
+            "None of the above"
+          ],
+          "correctAnswer": 2,
+        },
+        {
+          "question": "Indira Gandhi was assassinated in",
+          "options": ["1974", "1984", "1999", "1933"],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "How many players are there on each side in the game of Basketball?",
+          "options": ["4", "5", "11", "8"],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "In a normal human being, how much time does food take to reach the end of the intestine for complete absorption?",
+          "options": [
+            "About 4 hours",
+            "About 8 hours",
+            "About 16 hours",
+            "About 12 hours"
+          ],
+          "correctAnswer": 4,
+        },
+        {
+          "question":
+              "In certain diseases antibiotics are administered. The object is",
+          "options": [
+            "stimulate production of antibodies",
+            "produce toxins against bacteria",
+            "inhibit the growth of bacteria",
+            "stimulate production of white blood cells for fighting the disease"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "In cricket, the two sets of wickets are",
+          "options": [
+            "18 yards apart",
+            "28 yards apart",
+            "22 yards apart",
+            "22 yards apart"
+          ],
+          "correctAnswer": 3,
+        },
       ],
-      "category": {"_id": "63357abb3ab81af9ad154eb0", "name": "Geography"},
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633d548bef1fec4d39be85c8",
-      "text":
-          "Which country has been ruled by the Grimaldi dynasty for over 700 years?",
-      "options": [
-        {"option": "Monaco", "isCorrect": true},
-        {"option": "UK", "isCorrect": false},
-        {"option": "France", "isCorrect": false},
-        {"option": "Spain", "isCorrect": false}
+      [
+        {
+          "question":
+              "India's first indigenous helicopter was successfully flown in Bangalore on",
+          "options": [
+            "August 30, 1992",
+            "August 30, 1982",
+            "August 30, 1986",
+            "None of the above"
+          ],
+          "correctAnswer": 1,
+        },
+        {
+          "question":
+              "In which of the following places the Winter Olympics Games was held in 2014?",
+          "options": [
+            "Albertville",
+            "Lillehammer",
+            "Sochi, Russia",
+            "Salt Lake City (USA)"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "Hundred year war was fought between",
+          "options": [
+            "France and England",
+            "Greek and Persian forces",
+            "Civil war in England",
+            "None of the above"
+          ],
+          "correctAnswer": 1,
+        },
+        {
+          "question":
+              "In cricket, a run taken when the ball passes the batsman without touching his bat or body is called",
+          "options": ["leg bye", "bye", "bosie", "drive"],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "In which of the following pairs, the two substances forming the pair are chemically most dissimilar?",
+          "options": [
+            "Sugar and paper",
+            "Butter and paraffin wax",
+            "Chalk and marble",
+            "Charcoal and diamond"
+          ],
+          "correctAnswer": 2,
+        },
+        {
+          "question":
+              "India's Integrated Missiles Development Programme was started in ____ under the chairmanship of Dr. A.P.J. Abdul Kalam.",
+          "options": ["1979-80", "1980-81", "1981-82", "1982-83"],
+          "correctAnswer": 4,
+        },
+        {
+          "question": "INS Agrani (Petty Officers' School) is situated at",
+          "options": ["Mumbai", "Jamnagar", "Coimbatore", "Lonavla"],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "Hybridization is",
+          "options": [
+            "downward movement of water through soil",
+            "a process of tilling the land",
+            "decayed vegetable matter",
+            "cross-fertilization between two varieties"
+          ],
+          "correctAnswer": 4,
+        },
+        {
+          "question": "India is the ____ grower of pulses.",
+          "options": [
+            "largest",
+            "Smallest",
+            "appropriate for national need",
+            "None of the above"
+          ],
+          "correctAnswer": 1,
+        },
+        {
+          "question":
+              "In which world cup cricket final, Australia beat England?",
+          "options": [
+            "1983, Lord's - England",
+            "1987, Kolkata - India",
+            "1992, Melbourne - Australia",
+            "1996, Lahore - Pakistan"
+          ],
+          "correctAnswer": 2,
+        },
       ],
-      "category": {"_id": "63357adc3ab81af9ad154eb4", "name": "History"},
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633d4899ef1fec4d39be8577",
-      "text": "Justin Timberlake was formerly a vocalist for which band?",
-      "options": [
-        {"option": "N Sync", "isCorrect": true},
-        {"option": "Avenged Sevenfold", "isCorrect": false},
-        {"option": "Kings of Leon", "isCorrect": false},
-        {"option": "Muse", "isCorrect": false}
+      [
+        {
+          "question":
+              "How many non-permanent Security Council (UNO) members are from Afro-Asian countries?",
+          "options": ["5", "15", "2", "1"],
+          "correctAnswer": 1,
+        },
+        {
+          "question":
+              "Indira Gandhi Centre for Atomic Research, established in 1971, is located at",
+          "options": [
+            "Indore",
+            "Trombay, Maharashtra",
+            "Kalpakkam, Chennai",
+            "Kolkata"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question":
+              "In which year did Sir Edmund Hillary reach the summit of Mount Everest?",
+          "options": ["1952", "1953", "1954", "1955"],
+          "correctAnswer": 2,
+        },
+        {
+          "question": "HP stands for",
+          "options": [
+            "Harmonic Progression",
+            "Horse Power",
+            "both (a) and (b)",
+            "None of the above"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "India's first fast breeder neutron reactor was",
+          "options": ["Zerlina", "Apsara", "Purnima-I", "Kamini"],
+          "correctAnswer": 4,
+        },
+        {
+          "question": "India's first atomic power station was set up at",
+          "options": [
+            "Surat (Gujarat)",
+            "Tarapur (Maharashtra)",
+            "Trombay (Maharashtra)",
+            "Trombay (Maharashtra)"
+          ],
+          "correctAnswer": 2,
+        },
+        {
+          "question": "How many Ergs are there in 1 joule?",
+          "options": ["10^2", "10^4", "10^6", "10^7"],
+          "correctAnswer": 4,
+        },
+        {
+          "question":
+              "In 1943, Franklin D. Roosevelt, Winston Churchill and Joseph Stalin met at Teheran primarily",
+          "options": [
+            "to discuss the strategy to be adopted by the Allies to invade Germany",
+            "to consider a common plan of action by the Allies forces against the axis powers",
+            "for creating an effective instrument for maintaining international peace",
+            "to work out a common line of action against Japan"
+          ],
+          "correctAnswer": 3,
+        },
+        {
+          "question": "Innocent III, who became pope in 1198 led",
+          "options": [
+            "the first crusade",
+            "the second crusade",
+            "the third crusade",
+            "the fourth crusade"
+          ],
+          "correctAnswer": 4,
+        },
+        {
+          "question":
+              "In which year a resolution 'Uniting for Peace' was adopted by UN General Assembly?",
+          "options": ["1950", "1960", "1965", "1980"],
+          "correctAnswer": 1,
+        },
       ],
-      "category": {"_id": "63357ae03ab81af9ad154eb6", "name": "Music"},
-      "difficulty": {"_id": "63343ba898b44503fecc49e9", "degree": "Easy"}
-    },
-    {
-      "_id": "633d4b0cef1fec4d39be8589",
-      "text": "In which city is the TV series Grey`s Anatomy set?",
-      "options": [
-        {"option": "Fort Worth", "isCorrect": false},
-        {"option": "Denver", "isCorrect": false},
-        {"option": "San Jose", "isCorrect": false},
-        {"option": "Seattle", "isCorrect": true}
+      [
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
       ],
-      "category": {
-        "_id": "63357af83ab81af9ad154eb8",
-        "name": "TV Series and Films"
-      },
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633d52e4ef1fec4d39be85bb",
-      "text": "In motoring, what does MG stand for?",
-      "options": [
-        {"option": "Mechanical Gadgets", "isCorrect": false},
-        {"option": "Maximum Gadgets", "isCorrect": false},
-        {"option": "Max's Garages", "isCorrect": false},
-        {"option": "Morris Garages", "isCorrect": true}
+      [
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
       ],
-      "category": {
-        "_id": "63357ad03ab81af9ad154eb2",
-        "name": "General Knowledge"
-      },
-      "difficulty": {"_id": "63357b533ab81af9ad154ebe", "degree": "Medium"}
-    },
-    {
-      "_id": "633d4ce6ef1fec4d39be8599",
-      "text": "Who invented a vaccination for smallpox?",
-      "options": [
-        {"option": "Louis Pasteur", "isCorrect": false},
-        {"option": "Edward Jenner", "isCorrect": true},
-        {"option": "William Osler", "isCorrect": false},
-        {"option": "Charles Nicolle", "isCorrect": false}
+      [
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
       ],
-      "category": {
-        "_id": "63357b0d3ab81af9ad154eba",
-        "name": "Science and Nature"
-      },
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "634043a4d25ee1a315c627c8",
-      "text":
-          "Jupiter is named after Zeus, but which Greek god was Mercury named after?",
-      "options": [
-        {"option": "Ares", "isCorrect": false},
-        {"option": "Hermes", "isCorrect": true},
-        {"option": "Athena", "isCorrect": false},
-        {"option": "Apollo", "isCorrect": false}
+      [
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
       ],
-      "category": {
-        "_id": "63357ad03ab81af9ad154eb2",
-        "name": "General Knowledge"
-      },
-      "difficulty": {"_id": "63357b533ab81af9ad154ebe", "degree": "Medium"}
-    },
-    {
-      "_id": "633d5262ef1fec4d39be85b7",
-      "text": "What was the name of the Tonto`s horse in `The Lone Ranger`?",
-      "options": [
-        {"option": "Scratch", "isCorrect": false},
-        {"option": "Scar", "isCorrect": false},
-        {"option": "Scout", "isCorrect": true},
-        {"option": "Shave", "isCorrect": false}
-      ],
-      "category": {
-        "_id": "63357ad03ab81af9ad154eb2",
-        "name": "General Knowledge"
-      },
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633d5369ef1fec4d39be85bd",
-      "text": "Who invented the piano?",
-      "options": [
-        {"option": "Philip Dadson", "isCorrect": false},
-        {"option": "Narciso Yepes", "isCorrect": false},
-        {"option": "Heinrich Band", "isCorrect": false},
-        {"option": "Bartolomeo Cristofori", "isCorrect": true}
-      ],
-      "category": {
-        "_id": "63357ad03ab81af9ad154eb2",
-        "name": "General Knowledge"
-      },
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633f443e6c9ef451f3102f19",
-      "text":
-          "How many number 1 singles did Kim Wilde and her dad Marty have between them?",
-      "options": [
-        {"option": "3", "isCorrect": false},
-        {"option": "2", "isCorrect": false},
-        {"option": "1", "isCorrect": false},
-        {"option": "0", "isCorrect": true}
-      ],
-      "category": {"_id": "63357ae03ab81af9ad154eb6", "name": "Music"},
-      "difficulty": {"_id": "63343ba898b44503fecc49e9", "degree": "Easy"}
-    },
-    {
-      "_id": "633d4c6eef1fec4d39be8597",
-      "text": "What nuclear process takes place in an atomic bomb?",
-      "options": [
-        {"option": "Fission", "isCorrect": true},
-        {"option": "Fusion", "isCorrect": false},
-        {"option": "Positron Emission", "isCorrect": false},
-        {"option": "Alpha Decay", "isCorrect": false}
-      ],
-      "category": {
-        "_id": "63357b0d3ab81af9ad154eba",
-        "name": "Science and Nature"
-      },
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "634043ded25ee1a315c627ca",
-      "text":
-          "If you were a `chalkie` in Australia, what would your profession be?",
-      "options": [
-        {"option": "Stealing", "isCorrect": false},
-        {"option": "Teaching", "isCorrect": true},
-        {"option": "Running", "isCorrect": false},
-        {"option": "Sleeping", "isCorrect": false}
-      ],
-      "category": {
-        "_id": "63357ad03ab81af9ad154eb2",
-        "name": "General Knowledge"
-      },
-      "difficulty": {"_id": "63343ba898b44503fecc49e9", "degree": "Easy"}
-    },
-    {
-      "_id": "633f4d796c9ef451f3102f43",
-      "text": "Asuncion is the capital of which country?",
-      "options": [
-        {"option": "Uruguay", "isCorrect": false},
-        {"option": "Paraguay", "isCorrect": true},
-        {"option": "Columbia", "isCorrect": false},
-        {"option": "Chile", "isCorrect": false}
-      ],
-      "category": {"_id": "63357abb3ab81af9ad154eb0", "name": "Geography"},
-      "difficulty": {"_id": "63357b533ab81af9ad154ebe", "degree": "Medium"}
-    },
-    {
-      "_id": "634037f524fbd515626c9e73",
-      "text": "In music, how was Jiles Perry Richardson better known?",
-      "options": [
-        {"option": "The Big Hopper", "isCorrect": false},
-        {"option": "The Big Dipper", "isCorrect": false},
-        {"option": "The Big Bopper", "isCorrect": true},
-        {"option": "The Big Bomber", "isCorrect": false}
-      ],
-      "category": {"_id": "63357ae03ab81af9ad154eb6", "name": "Music"},
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633d46a3ef1fec4d39be8569",
-      "text":
-          "What song did Whitney Houston record for the 1984 Los Angeles Olympics",
-      "options": [
-        {"option": "Try It On My Own", "isCorrect": false},
-        {"option": "One Moment In Time", "isCorrect": true},
-        {"option": "Whatchulookinat", "isCorrect": false},
-        {"option": "Love That Man", "isCorrect": false}
-      ],
-      "category": {"_id": "63357adc3ab81af9ad154eb4", "name": "History"},
-      "difficulty": {"_id": "63357b5b3ab81af9ad154ec0", "degree": "Hard"}
-    },
-    {
-      "_id": "633d44eeef1fec4d39be855f",
-      "text": "What Viking is said to have discovered America?",
-      "options": [
-        {"option": "Leif Erikson", "isCorrect": false},
-        {"option": "Gunnar Hamundarson", "isCorrect": false},
-        {"option": "Eric Bloodaxe", "isCorrect": false},
-        {"option": "Eric the Red", "isCorrect": true}
-      ],
-      "category": {"_id": "63357adc3ab81af9ad154eb4", "name": "History"},
-      "difficulty": {"_id": "63343ba898b44503fecc49e9", "degree": "Easy"}
-    },
-    {
-      "_id": "633d4b35ef1fec4d39be858b",
-      "text": "In the movie Aliens, what was the name of the cat?",
-      "options": [
-        {"option": "James", "isCorrect": false},
-        {"option": "Jones", "isCorrect": true},
-        {"option": "Jose", "isCorrect": false},
-        {"option": "Jack", "isCorrect": false}
-      ],
-      "category": {
-        "_id": "63357af83ab81af9ad154eb8",
-        "name": "TV Series and Films"
-      },
-      "difficulty": {"_id": "63357b533ab81af9ad154ebe", "degree": "Medium"}
-    },
-    {
-      "_id": "633f4b5a6c9ef451f3102f39",
-      "text": "What is the tallest grass in the world?",
-      "options": [
-        {"option": "Bamboo", "isCorrect": true},
-        {"option": "Zoysia", "isCorrect": false},
-        {"option": "Ryegrass", "isCorrect": false},
-        {"option": "Centipede", "isCorrect": false}
-      ],
-      "category": {
-        "_id": "63357b0d3ab81af9ad154eba",
-        "name": "Science and Nature"
-      },
-      "difficulty": {"_id": "63343ba898b44503fecc49e9", "degree": "Easy"}
-    }
-  ],
-  "result_code": "200",
-  "result_message": "success"
+      [
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+        {
+          "question": "",
+          "options": ["", "", "", ""],
+          "correctAnswer": 1,
+        },
+      ]
+    ]
+  
 };

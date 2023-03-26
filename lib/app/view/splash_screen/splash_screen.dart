@@ -1,13 +1,14 @@
 import 'dart:async';
 import 'package:brain_battle/app/constants/colors.dart';
 import 'package:brain_battle/app/constants/lottie.dart';
-import 'package:brain_battle/app/routes/routes.dart';
+import 'package:brain_battle/app/controller/quiz_controller.dart';
 import 'package:brain_battle/app/view/home_screen/home_screen.dart';
 import 'package:brain_battle/app/view/login_screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,8 +21,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 0), () {
-      Get.offAll(LoginScreen());
+    Timer(Duration(milliseconds:500), () {
+      whereToGo();
     });
   }
 
@@ -36,7 +37,25 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
-  // splashWhereToGo() {
-  //   Navigator.pushNamed(context, homePage);
-  // }
+  void whereToGo() async {
+    await context.read<QuizProvider>().diffultyAdding();
+    var sharedPreferences = await SharedPreferences.getInstance();
+    var isLoggedIn = sharedPreferences.getBool('LoginCheck');
+    if (isLoggedIn != null) {
+      isLoggedIn
+          ? Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            )
+          : Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => LoginScreen()),
+            );
+    } else {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => LoginScreen()),
+      );
+    }
+  }
 }

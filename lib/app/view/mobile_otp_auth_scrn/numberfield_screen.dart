@@ -22,76 +22,68 @@ class _SignInScreenOtpState extends State<SignInScreenOtp> {
     final width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: secondaryBg,
         body: SingleChildScrollView(
-          child: Container(
-            height: height,
-            width: width,
-            decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    end: Alignment.bottomCenter,
-                    colors: [gradientBg, secondaryBg],
-                    stops: [0.3, 0.9])),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Padding(padding: EdgeInsets.only(top: height / 25)),
-                Center(
-                  child: Image(
-                    image: AssetImage(authenticationPng),
-                    height: height / 3,
-                    width: width / 2,
-                  ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Padding(padding: EdgeInsets.only(top: height / 25)),
+              Center(
+                child: Image(
+                  image: AssetImage(authenticationPng),
+                  height: height / 3,
+                  width: width / 2,
                 ),
-                Padding(padding: EdgeInsets.only(top: height / 30)),
-                Text(
-                  "Phone Verification",
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
+              Padding(padding: EdgeInsets.only(top: height / 30)),
+              Text(
+                "Phone Verification",
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
+              Padding(padding: EdgeInsets.only(top: height / 30)),
+              Text(
+                "We need to register your Phone Number before getting started !",
+                style: TextStyle(
+                  fontSize: 17,
                 ),
-                Padding(padding: EdgeInsets.only(top: height / 30)),
-                Text(
-                  "We need to register your Phone Number before getting started !",
-                  style: TextStyle(
-                    fontSize: 17,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: height / 30),
-                ),
-                MobileOtpField(
-                  height: height,
-                  width: width,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: height / 15),
-                ),
-                SendCodeButton(height: height, width: width),
-                Padding(
-                  padding: EdgeInsets.only(top: height / 35),
-                ),
-                Row(
-                  children: [
-                    Expanded(
-                        child: Divider(
+                textAlign: TextAlign.center,
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: height / 30),
+              ),
+              MobileOtpField(
+                height: height,
+                width: width,
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: height / 15),
+              ),
+              SendCodeButton(height: height, width: width),
+              Padding(
+                padding: EdgeInsets.only(top: height / 35),
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      child: Divider(
+                    color: blackText,
+                    thickness: 2,
+                  )),
+                  Text(" Or continue with "),
+                  Expanded(
+                    child: Divider(
                       color: blackText,
                       thickness: 2,
-                    )),
-                    Text(" Or continue with "),
-                    Expanded(
-                      child: Divider(
-                        color: blackText,
-                        thickness: 2,
-                      ),
                     ),
-                  ],
-                ),
-                SizedBox(
-                  height: height / 30,
-                ),
-                LogoRow(width: width, height: height),
-              ],
-            ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: height / 30,
+              ),
+              LogoRow(width: width, height: height),
+            ],
           ),
         ),
       ),

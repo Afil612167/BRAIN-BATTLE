@@ -1,10 +1,10 @@
 import 'package:brain_battle/app/constants/colors.dart';
 import 'package:brain_battle/app/constants/images.dart';
 import 'package:brain_battle/app/view/mobile_otp_ver_scrn/widgets/verify_num_button.dart';
+import 'package:brain_battle/app/view/quiz_screen/widget/exit_popup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart';
 import 'package:pinput/pinput.dart';
 
 class SignInScreenOtpVarification extends StatelessWidget {
@@ -41,29 +41,25 @@ class SignInScreenOtpVarification extends StatelessWidget {
       ),
     );
     return SafeArea(
-      child: Scaffold(
-        extendBodyBehindAppBar: true,
-        appBar: AppBar(
-          leading: InkWell(
-              onTap: () => Get.back(),
-              child: Icon(
-                Icons.arrow_back_ios_new_sharp,
-                color: blackText,
-              )),
-          elevation: 0,
-          backgroundColor: Colors.transparent,
-        ),
-        resizeToAvoidBottomInset: false,
-        body: Container(
-          height: height,
-          width: width,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [secondaryBg, gradientBg],
-                stops: [0.3, 0.8],
-                begin: Alignment.topCenter),
+      child: WillPopScope(
+        onWillPop: () {
+          return showExitPopup(context);
+        },
+        child: Scaffold(
+          extendBodyBehindAppBar: true,
+
+          appBar: AppBar(
+            leading: InkWell(
+                onTap: () => Get.back(),
+                child: Icon(
+                  Icons.arrow_back_ios_new_sharp,
+                  color: blackText,
+                )),
+            elevation: 0,
+            backgroundColor: Colors.transparent,
           ),
-          child: Column(
+          resizeToAvoidBottomInset: false,
+          body: Column(
             children: [
               Padding(padding: EdgeInsets.only(top: height / 25)),
               Center(
@@ -101,7 +97,8 @@ class SignInScreenOtpVarification extends StatelessWidget {
                   child: Text(
                     "Edit Phone number?",
                     style: TextStyle(
-                        color: blackText, decoration: TextDecoration.underline),
+                        color: blackText,
+                        decoration: TextDecoration.underline),
                   ))
             ],
           ),

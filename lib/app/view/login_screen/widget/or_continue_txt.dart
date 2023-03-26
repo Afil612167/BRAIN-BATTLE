@@ -1,5 +1,4 @@
 import 'package:brain_battle/app/constants/colors.dart';
-import 'package:brain_battle/app/routes/routes.dart';
 import 'package:brain_battle/app/view/mobile_otp_auth_scrn/numberfield_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -27,9 +26,10 @@ class OrContinuePhTxt extends StatelessWidget {
           ),
           children: [
             TextSpan(
-                text: 'phone number',
-                style: TextStyle(
-                    color: secondaryBg, decoration: TextDecoration.underline))
+              text: 'phone number',
+              style: TextStyle(
+                  color: secondaryBg, decoration: TextDecoration.underline),
+            )
           ],
         ),
       ),

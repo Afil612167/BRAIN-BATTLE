@@ -1,5 +1,4 @@
-import 'package:brain_battle/app/constants/lists.dart';
-import 'package:brain_battle/app/view/home_screen/widget/difficultychip.dart';
+
 import 'package:brain_battle/app/view/home_screen/widget/lets_play_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     print("height is $height\nwidht is $width");
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: levelsBg,
         appBar: AppBar(
             elevation: 0,
             backgroundColor: Colors.transparent,
