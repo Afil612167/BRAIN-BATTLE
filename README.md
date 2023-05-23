@@ -7,6 +7,7 @@ Features:-
 * Responsive
 * StateManagement Provider 
 * Routing/Navigation With GetX
+* Local database Shared Preferences
 
 
 Here is Few Screenshots of app
