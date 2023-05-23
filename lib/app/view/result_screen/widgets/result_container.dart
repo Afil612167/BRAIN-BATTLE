@@ -1,9 +1,10 @@
 import 'package:bordered_text/bordered_text.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 import 'package:brain_battle/app/constants/colors.dart';
 import 'package:brain_battle/app/controller/quiz_controller.dart';
 import 'package:brain_battle/app/view/result_screen/widgets/stars_indicator.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ResultContainer extends StatelessWidget {
   const ResultContainer({

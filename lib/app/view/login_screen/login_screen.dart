@@ -1,11 +1,12 @@
-import 'dart:ui';
+
+
+import 'package:drop_shadow_image/drop_shadow_image.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:brain_battle/app/constants/colors.dart';
 import 'package:brain_battle/app/constants/images.dart';
 import 'package:brain_battle/app/view/login_screen/widget/authendication_button.dart';
-import 'package:drop_shadow_image/drop_shadow_image.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'widget/or_continue_txt.dart';
 

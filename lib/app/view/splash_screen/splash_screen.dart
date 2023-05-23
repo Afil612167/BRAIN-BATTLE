@@ -1,14 +1,17 @@
 import 'dart:async';
-import 'package:brain_battle/app/constants/colors.dart';
-import 'package:brain_battle/app/constants/lottie.dart';
-import 'package:brain_battle/app/controller/quiz_controller.dart';
+
 import 'package:brain_battle/app/view/home_screen/home_screen.dart';
-import 'package:brain_battle/app/view/login_screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:brain_battle/app/constants/colors.dart';
+import 'package:brain_battle/app/constants/lottie.dart';
+import 'package:brain_battle/app/controller/quiz_controller.dart';
+import 'package:brain_battle/app/view/login_screen/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -21,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(milliseconds:500), () {
+    Timer(const Duration(milliseconds: 500), () {
       whereToGo();
     });
   }
@@ -37,25 +40,16 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
-  void whereToGo() async {
-    await context.read<QuizProvider>().diffultyAdding();
+  whereToGo() async {
     var sharedPreferences = await SharedPreferences.getInstance();
     var isLoggedIn = sharedPreferences.getBool('LoginCheck');
+    context.read<QuizProvider>().getsavedStarCountByLvl();
+    context.read<QuizProvider>().getStoredData();
+
     if (isLoggedIn != null) {
-      isLoggedIn
-          ? Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => HomeScreen()),
-            )
-          : Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => LoginScreen()),
-            );
+      isLoggedIn ? Get.offAll(HomeScreen()) : Get.offAll(LoginScreen());
     } else {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => LoginScreen()),
-      );
+      Get.offAll(LoginScreen());
     }
   }
 }

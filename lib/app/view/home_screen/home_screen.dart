@@ -1,8 +1,8 @@
 
-import 'package:brain_battle/app/view/home_screen/widget/lets_play_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:brain_battle/app/constants/colors.dart';
+import 'package:brain_battle/app/view/home_screen/widget/lets_play_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

@@ -76,12 +76,7 @@ class GradientContainer extends StatelessWidget {
                   onTap: () {
                     provider.getStoredData();
                     if (provider.difficultyLock[index]) {
-                      Get.to(
-                          LevelsScreen(
-                            height: height,
-                            widht: width,
-                          ),
-                          arguments: {height, width});
+                      Get.to(LevelsScreen(height: height, width: width));
                     }
                   },
                   child: Chip(

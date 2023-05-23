@@ -1,11 +1,12 @@
-import 'package:brain_battle/app/constants/colors.dart';
-import 'package:brain_battle/app/constants/lists.dart';
-import 'package:brain_battle/app/controller/quiz_controller.dart';
-import 'package:brain_battle/app/view/result_screen/widgets/result_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
+import 'package:brain_battle/app/constants/colors.dart';
+import 'package:brain_battle/app/constants/lists.dart';
+import 'package:brain_battle/app/controller/quiz_controller.dart';
+import 'package:brain_battle/app/view/result_screen/widgets/result_container.dart';
 
 import '../quiz_screen/widget/exit_popup.dart';
 

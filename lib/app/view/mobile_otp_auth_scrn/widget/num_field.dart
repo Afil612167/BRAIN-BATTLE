@@ -1,14 +1,15 @@
-
 import 'package:brain_battle/app/constants/colors.dart';
+import 'package:brain_battle/app/controller/quiz_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
-
 
 class MobileOtpField extends StatelessWidget {
   double height;
   double width;
-   MobileOtpField({
+  QuizProvider provider;
+  MobileOtpField({
     Key? key,
+    required this.provider,
     required this.height,
     required this.width,
   }) : super(key: key);
@@ -27,9 +28,10 @@ class MobileOtpField extends StatelessWidget {
           ),
         ),
         initialCountryCode: 'IN',
-        style: TextStyle(color: secondaryBg),
+        style: TextStyle(color: blackText),
         onChanged: (phone) {
-          print(phone.completeNumber);
+          provider.phoneNumber = phone.completeNumber;
+          provider.phoneNumberUpdate();
         },
         onCountryChanged: (country) {
           print(country);

@@ -1,18 +1,18 @@
-import 'package:brain_battle/app/constants/colors.dart';
-import 'package:brain_battle/app/constants/images.dart';
-import 'package:brain_battle/app/controller/quiz_controller.dart';
-import 'package:brain_battle/app/util/questions/questions.dart';
 import 'package:brain_battle/app/view/home_screen/home_screen.dart';
-import 'package:brain_battle/app/view/quiz_screen/quiz_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polygon/flutter_polygon.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
+import 'package:brain_battle/app/constants/colors.dart';
+import 'package:brain_battle/app/constants/images.dart';
+import 'package:brain_battle/app/controller/quiz_controller.dart';
+import 'package:brain_battle/app/view/quiz_screen/quiz_screen.dart';
+
 class LevelsScreen extends StatefulWidget {
-  LevelsScreen({super.key, required this.height, required this.widht});
+  LevelsScreen({super.key, required this.height, required this.width});
   final double height;
-  final double widht;
+  final double width;
 
   @override
   State<LevelsScreen> createState() => _LevelsScreenState();
@@ -30,14 +30,18 @@ class _LevelsScreenState extends State<LevelsScreen> {
             elevation: 0,
             leading: IconButton(
               onPressed: () {
-                Get.back();
+                Get.to(HomeScreen());
               },
               icon: Icon(
                 Icons.arrow_circle_left_outlined,
                 size: 28,
               ),
             ),
-            title: Text("Levels"),
+            title: InkWell(
+                onTap: () {
+                  provider.deleteLocalDatas();
+                },
+                child: Text("Levels")),
             centerTitle: true,
           ),
           body: GridView.builder(
@@ -59,27 +63,30 @@ class _LevelsScreenState extends State<LevelsScreen> {
                           Align(
                             alignment: Alignment.bottomLeft,
                             child: Image.asset(
-                              provider.level < index
-                                  ? starIconImage2
-                                  : starIconImage,
+                              // provider.currentQuestionLevel < index
+                              //     ? starIconImage2:
+                              //          starIconImage,
+                              provider.starList[index] >=1
+                                  ? starIconImage
+                                  : starIconImage2,
                               height: widget.height * 0.055,
                             ),
                           ),
                           Align(
                             alignment: Alignment.topCenter,
                             child: Image.asset(
-                              provider.level < index
-                                  ? starIconImage2
-                                  : starIconImage,
+                           provider.starList[index] >= 2
+                                  ? starIconImage
+                                  : starIconImage2,
                               height: widget.height * 0.055,
                             ),
                           ),
                           Align(
                             alignment: Alignment.bottomRight,
                             child: Image.asset(
-                              provider.level < index
-                                  ? starIconImage2
-                                  : starIconImage,
+                           provider.starList[index] >= 3
+                                  ? starIconImage
+                                  : starIconImage2,
                               height: widget.height * 0.055,
                             ),
                           ),

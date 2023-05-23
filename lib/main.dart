@@ -1,29 +1,20 @@
 import 'package:brain_battle/app/controller/quiz_controller.dart';
-import 'package:brain_battle/app/view/splash_screen/splash_screen.dart';
-import 'package:flutter/Material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+import 'app/view/splash_screen/splash_screen.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(
-    ChangeNotifierProvider<QuizProvider>(
-      create: (BuildContext context) {
-        return QuizProvider();
-      },
+    ChangeNotifierProvider(
+      create: (context) => QuizProvider(),
       child: GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: "Brain Battle",
-        home: SplashScreen(),
-        // initialRoute: loginScreen,
-        // routes: {
-        //   quizScrn:(context) => QuizScreen(),
-        //   mobileotpScrn:(context) => SignInScreenOtpVarification(),
-        //   splashScreen:(context) => SplashScreen(),
-        //   homePage:(context) => HomeScreen(),
-        //   loginScreen:(context) => LoginScreen(),
-        //   mobileAuthScrn:(context) => SignInScreenOtp()
-        // },
-      ),
+          debugShowCheckedModeBanner: false, home: SplashScreen()),
     ),
   );
 }

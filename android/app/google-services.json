@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "273101670102",
+    "project_id": "brain-battle-761b9",
+    "storage_bucket": "brain-battle-761b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273101670102:android:f46dda6e36be1528b5eb77",
+        "android_client_info": {
+          "package_name": "com.example.brain_battle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273101670102-bkq2p5dibo0uag64ru1j60vc6r08v3pj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brain_battle",
+            "certificate_hash": "b7dada15b87e9a0a0b1c0c13a550b9e2eaa519ba"
+          }
+        },
+        {
+          "client_id": "273101670102-31l5juknltn4mjtpr1do2954f700te6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHsyouB3OO0_sY9w_knqBv0k2lbTs-q3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273101670102-31l5juknltn4mjtpr1do2954f700te6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
