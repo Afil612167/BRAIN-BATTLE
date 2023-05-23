@@ -29,4 +29,3 @@ Here is Few Screenshots of app
 ![photo_2023-05-23_23-01-08](https://github.com/Afil612167/BRAIN-BATTLE/assets/114054302/ef159302-5242-439d-92ab-d79e08a28eb6)
 
 
-![photo_2023-05-23_23-01-11](https://github.com/Afil612167/BRAIN-BATTLE/assets/114054302/300d3c55-a83a-4d71-9cb3-2276bf2cae67)
